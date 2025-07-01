@@ -24,6 +24,7 @@ export async function POST(request: NextRequest) {
         return NextResponse.json({ success: true, received: message, reply: completion.choices[0].message.content || 'No reply from model' });
     }
     catch (error) {
+        console.error('OpenAI API Error:', error);
         return NextResponse.json({ success: false, error: 'Failed to process request' }, { status: 500 });
     }
 }
