@@ -10,8 +10,6 @@ function UserForm() {
     const [input, setInput] = useState('');
     const [conversations, setConversations] = useState<ChatMessage[]>([]);
     const [isLoading, setIsLoading] = useState(false);
-
-    const bottomRef = useRef<HTMLDivElement>(null);
     const scrollContainerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
