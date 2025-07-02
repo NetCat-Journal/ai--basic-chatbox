@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className='w-full min-h-screen bg-[#110828] p-4 text-white font-poppins overflow-hidden'
+        className='w-full sm:min-h-[80vh] md:min-h-screen bg-[#110828] p-4 text-white font-poppins overflow-hidden'
       >
         {children}
       </body>
