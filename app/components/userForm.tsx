@@ -50,8 +50,8 @@ function UserForm() {
     };
 
     return (
-        <div className="flex flex-col justify-between h-[100%]">
-            <div className=" flex flex-col overflow-scroll flex-1 space-y-2 pr-2" ref={scrollContainerRef}>
+        <div className="flex flex-col justify-between h-screen">
+            <div className=" flex overflow-y-auto, added px-4 py-2" ref={scrollContainerRef}>
                 {conversations.map((msg, i) => (
                     <div
                         key={i}
@@ -75,7 +75,7 @@ function UserForm() {
             </div>
             <form
                 onSubmit={handleSubmit}
-                className="mt-4 w-full border border-gray-300 rounded-2xl px-4 py-2 bg-[#1a1035]"
+                className="w-full border-t border-gray-300 px-4 py-2 bg-[#1a1035] pb-[env(safe-area-inset-bottom)]"
             >
                 <div className="flex flex-row">
                     <input
