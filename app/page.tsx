@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="flex flex-col h-full w-full py-4 overflow-hidden">
+    <main className="flex flex-col h-full w-full py-4">
       <div className="mb-2">
         <Image
           src="/img/logo.png"
