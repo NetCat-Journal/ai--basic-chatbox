@@ -75,7 +75,7 @@ function UserForm() {
             </div>
             <form
                 onSubmit={handleSubmit}
-                className="mt-4 w-full border border-gray-300 rounded-2xl px-4 py-2 bg-[#1a1035] pb-[env(safe-area-inset-bottom)]"
+                className="mt-4 w-full border border-gray-300 rounded-2xl px-4 py-2 bg-[#1a1035] border-t"
             >
                 <div className="flex flex-row">
                     <input
