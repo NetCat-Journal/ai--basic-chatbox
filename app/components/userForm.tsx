@@ -51,7 +51,7 @@ function UserForm() {
 
     return (
         <div className="flex flex-col justify-between h-[100%] overflow-hidden">
-            <div className=" max-h-[80vh]  flex flex-col overflow-scroll flex-1 space-y-2 pr-2" ref={scrollContainerRef}>
+            <div className="flex flex-col overflow-scroll flex-1 space-y-2 pr-2" ref={scrollContainerRef}>
                 {conversations.map((msg, i) => (
                     <div
                         key={i}
@@ -75,7 +75,7 @@ function UserForm() {
             </div>
             <form
                 onSubmit={handleSubmit}
-                className="mt-4 w-full border border-gray-300 rounded-2xl px-4 py-2 bg-[#1a1035] border-t"
+                className="mt-4 w-full border border-gray-300 rounded-2xl px-4 py-2 bg-[#1a1035] border-t mb-5"
             >
                 <div className="flex flex-row">
                     <input

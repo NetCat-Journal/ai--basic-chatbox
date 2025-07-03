@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen w-full p-4">
-      <div className="mb-2">
+    <main className="flex flex-col h-full w-full px-4 py-4 overflow-hidden">
+      <div className="mb-2 sticky top-0">
         <Image
           src="/img/logo.png"
           alt="User avatar"
@@ -14,7 +14,7 @@ export default function Home() {
           className="rounded-full"
         />
       </div>
-      <div className="flex-1 overflow-hidden h-[80%]">
+      <div className="flex-1 overflow-hidden h-[60%]">
         <UserForm />
       </div>
     </main>
